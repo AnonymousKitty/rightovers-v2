@@ -1,0 +1,18 @@
+.cat-btn {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 1em;
+    padding: .625em 1.25em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cat-btn.has-rounded {
+    border-radius: .3125em;
+}
+
+.cat-btn.is-primary {
+    background-color: red;
+}

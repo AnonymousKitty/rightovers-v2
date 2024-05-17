@@ -1,0 +1,111 @@
+
+.NearYou {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 0 0;
+    box-sizing: border-box;
+    background-color: #D9FFE3;
+    height: 100%;
+  }
+
+  .title-info {
+    padding-top: 0vh;
+    padding-bottom: 2vh;
+    /* height: 10vh; */
+    text-align: center;
+    color: black;
+  }
+  
+  .title-info h2 {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Pacifico";
+    margin-bottom: 20px;
+  }
+  
+  .title-info .intro-sentence {
+    font-weight: 700;
+    font-size: 23px;
+  }
+
+  .header{
+    text-align:left;
+    text-indent: 3em;
+    margin: 2em;
+    margin-left: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  ul {
+    width: 70%;
+    min-height: 100%;
+    background-color: white;
+    max-width: 50em;
+    margin: 5em;
+    padding: 20px;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .listContainer {
+    background-color: white;
+  }
+
+  .show{
+    font-size: 1.5em;
+    border: 0px;
+    background-color: #83d981;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .hide{
+        display: none;
+  }
+
+  .listElementHover:hover{
+    background-color: #83d981;
+    cursor: pointer;
+  }
+
+  .listElementActive{
+    background-color: #83d981;
+    
+  }
+
+ 
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add some space between buttons */
+    margin-bottom: 40px;
+  }
+  
+  .action-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+    background-color: #83d981;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 600px) {
+    .user-info h2 {
+      font-size: 24px;
+    }
+  
+    .action-btn {
+      padding: 8px 16px;
+      font-size: 18px;
+    }
+  }
+  
+  .spacer {
+    height: 200px; /* Adjust the height as needed */
+  }
