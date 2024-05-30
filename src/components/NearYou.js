@@ -22,7 +22,7 @@ const ListItem = ({ foodItems, restaurantName, address }) => {
             <ul className={visible ? 'show':'hide'}>
                 {foodItems.map(food => <li>{food}</li>)}
             </ul>
-            </div>
+        </div>
     )
 }
 

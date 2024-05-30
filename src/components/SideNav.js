@@ -6,7 +6,7 @@ import { NavData } from "./NavData";
 import { useState } from "react";
 
 export default function Sidenav() {
-    const [open, setopen] = useState(false)
+    const [open, setopen] = useState(true)
     const toggleOpen = () => {
         setopen(!open)
     }

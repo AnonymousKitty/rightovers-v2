@@ -2,15 +2,17 @@
     background-color: #4CAF50;
     color: white;
     margin-top: 1em;
-    padding: .625em 1.25em;
+    padding: 0.5em 1em;
     border: none;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 .cat-btn.has-rounded {
-    border-radius: .3125em;
+    border-radius: .5em;
 }
 
 .cat-btn.is-primary {
