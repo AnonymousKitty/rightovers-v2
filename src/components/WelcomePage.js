@@ -10,18 +10,14 @@ const WelcomePage = () => {
             <div className="welcomepage w-[100vw]">
                 <h2 className="title">Rightovers</h2>
                 <p className='intro-sentence'>Leftovers done right!</p>
-                <img src={heart_logo} alt="A bunch of vegetables in the shape of a heart" width="50%" height="50%"/>
+                <img src={heart_logo} alt="A bunch of vegetables in the shape of a heart" className='centre-logo'/>
             
-                <table className="buttons grid-container">
-                    <tbody>
-                        <tr>
-                            <td><Link link={'/NearYou'} hasRounded={true} className="grid-item">What's Near Me</Link></td>
-                            <td><Link link={'/FoodSharing'} hasRounded={true} className="grid-item">Find Food</Link></td>
-                            <td><Link link={'/NearMePage'} hasRounded={true} className="grid-item">Find Foodbank</Link></td>
-                            <td><Link link={'/Settings'} hasRounded={true} className="grid-item">Settings</Link></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div className="buttons">
+                    <Link link={'/NearYou'} hasRounded={true} className="grid-item">What's Near Me</Link>
+                    <Link link={'/FoodSharing'} hasRounded={true} className="grid-item">Find Food</Link>
+                    <Link link={'/NearMePage'} hasRounded={true} className="grid-item">Find Foodbank</Link>
+                    <Link link={'/Settings'} hasRounded={true} className="grid-item">Settings</Link>
+                </div>
             </div>
         </div>
     );
