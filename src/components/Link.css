@@ -1,4 +1,4 @@
-.cat-btn {
+.directory-btn {
     background-color: #4CAF50;
     color: white;
     margin-top: 1em;
@@ -9,12 +9,9 @@
     text-align: center;
     font-size: 1.5em;
     font-weight: 500;
-}
-
-.cat-btn.has-rounded {
     border-radius: .5em;
 }
 
-.cat-btn.is-primary {
-    background-color: red;
+.directory-btn:hover{
+    background-color: #3b923e;
 }

@@ -1,8 +1,8 @@
 import "./Link.css"
 
-export default function Link({link, hasRounded=false, isPrimary=false, children}) {
+export default function Link({link, children}) {
     
     return (
-        <a href={link} className={"cat-btn " + (hasRounded ? 'has-rounded ' : ' ') + (isPrimary ? 'is-primary' : ' ')}>{children}</a>
+        <a href={link} className="directory-btn">{children}</a>
     )
 }
