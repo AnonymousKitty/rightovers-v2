@@ -7,7 +7,7 @@
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    font-size: 1.5em;
+    font-size: clamp(1.3em, 3vh, 6vw);
     font-weight: 500;
     border-radius: .5em;
 }

@@ -7,7 +7,6 @@ import WelcomePage from './components/WelcomePage';
 import NearMe from './components/NearMe';
 import NearYou from './components/NearYou';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 
