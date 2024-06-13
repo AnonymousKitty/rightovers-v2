@@ -7,7 +7,7 @@ const WelcomePage = () => {
     return (
         <div className='flex w-screen'>
             <SideNav />
-            <div className="welcomepage w-[100vw]">
+            <div className="welcomepage w-[100vw] h-[100vh]">
                 <h2 className="title">Rightovers</h2>
                 <p className='intro-sentence'>Leftovers done right!</p>
                 <img src={fruit_heart} alt="A bunch of vegetables in the shape of a heart" className='centre-logo'/>
