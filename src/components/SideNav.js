@@ -11,7 +11,7 @@ export default function Sidenav() {
         setopen(!open)
     }
   return (
-    <div className={open?styles.sidenav:styles.sidenavClosed}>
+    <div className={open?styles.sidenavOpen:styles.sidenavClosed}>
         <button className={styles.menuBtn} onClick={toggleOpen}>
             {open? <KeyboardDoubleArrowLeftIcon />: <KeyboardDoubleArrowRightIcon />}
         </button>
@@ -19,7 +19,7 @@ export default function Sidenav() {
             return <NavLink key={item.id} className={styles.sideitem} to={item.link}>
             {item.icon}
             {open && <span className={styles.linkText}>{item.text}</span>}
-        </NavLink>
+            </NavLink>
         })}
     </div>
   )
