@@ -1,34 +1,52 @@
+:root {
+  --bg-color: hsl(136, 100%, 93%);
+}
+
 .welcomepage {
   display: grid;
   justify-items: center;
-  align-content: center;
-  background-color: #D9FFE3;
+  background-color: var(--bg-color);
   position: absolute;
   padding-left: 65px;
+  grid-auto-rows: min-content;
+}
+
+.brand{
+  background-color: var(--bg-color);
+  display: grid;
+  justify-items: center;
+  grid-auto-rows: min-content;
 }
 
 .title {
   margin-top: 0.25em;
-  font-weight: 600;
-  font-size: clamp(3.5em, 6vw, 9em);
+  font-family: "Fira Sans";
+  font-weight: 700;
+  font-size: clamp(2.5em, 10vh, 15vw);
   color: green;
 }
 
 .intro-sentence {
-  font-weight: 700;
-  font-size: clamp(1.4em, 2.5vw, 2.3em);
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.3em, 4vh, 5vw);
   padding-bottom: 1em;
+  text-align: center;
 }
 
 .buttons {
   display: flex;
-  column-gap: 1.3em;
-  align-items: center;
+  column-gap: 1em;
+  @media screen and (max-width: 500px){
+    column-gap: 4em;
+  }
   justify-content: center;
   flex-wrap: wrap;
-  padding: 1em;
+  padding: 0.5em;
+  background-color: var(--bg-color);
 }
 
 .centre-logo{
-  padding: 1.5em;
+  padding: 1em;
+  width: clamp(35vh, 50vw, 60vh);
 }
