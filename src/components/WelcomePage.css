@@ -3,6 +3,8 @@
   justify-items: center;
   align-content: center;
   background-color: #D9FFE3;
+  position: absolute;
+  padding-left: 65px;
 }
 
 .title {
