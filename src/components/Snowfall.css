@@ -1,0 +1,20 @@
+:root {
+    --snow-speed: 4s;
+    --snow-pos: 0vw;
+}
+
+flake {
+    z-index: 1;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: red;
+    top: -1px;
+    left: var(--snow-pos);
+    animation: fall var(--snow-speed) linear infinite forwards;
+}
+
+@keyframes fall {
+    0% {transform: translateY(0)}
+    100% {transform: translateY(100vh);}
+}

@@ -42,6 +42,14 @@
     composes: linkText;
     visibility: hidden;
 }
+
+.sidenavOpen .sideitem:hover {
+    background-color: #244f7d27;
+    border-radius: 2em;
+    @media (prefers-reduced-motion: no-preference) {
+        transform: translateX(0.5em);
+    }
+}
  
 .sidenavOpen .sideitem:hover {
     background-color: #244f7d27;

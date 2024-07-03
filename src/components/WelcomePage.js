@@ -2,8 +2,19 @@ import './WelcomePage.css'; // Import the CSS for styling
 import SideNav from './SideNav';
 import fruit_heart from '../assets/images/fruit_heart.png';
 import Link from './Link';
+import Fall from "./Snowfall.js";
+
 
 const WelcomePage = () => {
+    function snow() {
+        <Fall></Fall>
+    }
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+        const centreLogo = document.querySelector('.centre-logo');
+        console.error(centreLogo);
+    });
+
     return (
         <div className='flex w-screen'>
             <SideNav />

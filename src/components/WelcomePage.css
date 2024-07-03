@@ -2,6 +2,10 @@
   --bg-color: hsl(136, 100%, 93%);
 }
 
+body{
+  overflow: hidden;
+}
+
 .welcomepage {
   display: grid;
   justify-items: center;
@@ -49,4 +53,41 @@
 .centre-logo{
   padding: 1em;
   width: clamp(35vh, 50vw, 60vh);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .centre-logo{
+    animation-name: pulse;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+  }
+  
+  .centre-logo:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+    animation-iteration-count: 1;
+
+  }
+
+  @keyframes bounce {
+    0% {transform: translateY(0);}
+    40% {transform: translateY(-20px); rotate: 0deg; scale: 104%;}
+    60% {rotate: -10deg;}
+    80% {rotate: 10deg;}
+    100% {transform: translateY(-20px); scale: 110%;}
+  }
+  
+  @keyframes pulse {
+    0% {scale: 100%;}
+    10% {transform: translateY(-20px);scale: 110%;}
+    20% {transform: translateY(0px);scale: 100%;}
+    40% {transform: translateY(-20px);scale: 110%;}
+    60% {transform: translateY(0px); scale: 100%;}
+  }
 }
